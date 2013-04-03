@@ -1,0 +1,10 @@
+.send-link-home ol {
+	/* Don't show numbers in front of input fields */
+	list-style-type: none;
+}
+
+.send-link-home img,
+.send-link-home .explanation {
+	/* The CAPTCHA image and explanation */
+	display: block;
+}

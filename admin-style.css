@@ -1,0 +1,11 @@
+#wgt_title,
+#email_subject,
+#email_sender,
+#email_from,
+textarea {
+	min-width: 30em;
+}
+ul {
+	margin: auto auto auto 1.5em;
+	list-style-position:outside;	
+}
