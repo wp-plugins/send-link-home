@@ -3,7 +3,7 @@
 Plugin Name: Send Link Home
 Plugin URI: http://www.inmote.com
 Description: Allow visitors to email the current page URL to themselves, for later viewing.
-Version: 1.0
+Version: 1.0.1
 Author: Inmote
 Author URI: http://www.inmote.com
 License: GPLv2 or later
