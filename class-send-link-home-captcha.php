@@ -167,15 +167,6 @@ class Send_Link_Home_Captcha {
 		$noise_color      = imagecolorallocate( $image, $r, $g, $b );
 
 
-		/* generate CAPTCHA text */
-		$textbox = imagettfbbox( $font_size, 0, self::FONT_FILE, $code )
-				or die('Error in imagettfbbox function');
-		$x = ( $width - $textbox[4]  ) / 2;
-		$y = ( $height - $textbox[5] ) / 2;
-		imagettftext( $image, $font_size, 0, $x, $y, $text_color,
-					self::FONT_FILE , $code )
-				or die('Error in imagettftext function');
-
 		/* generate random dots */
 		for( $d = 0; $d < ( $width * $height ) / 3; $d++ )
 			imagesetpixel( $image,
@@ -189,6 +180,15 @@ class Send_Link_Home_Captcha {
 					mt_rand( 0 , $width ), mt_rand( 0 , $height ),
 					mt_rand( 0 , $width ), mt_rand( 0 , $height ),
 					$noise_color );
+
+		/* generate CAPTCHA text */
+		$textbox = imagettfbbox( $font_size, 0, self::FONT_FILE, $code )
+				or die('Error in imagettfbbox function');
+		$x = ( $width - $textbox[4]  ) / 2;
+		$y = ( $height - $textbox[5] ) / 2;
+		imagettftext( $image, $font_size, 0, $x, $y, $text_color,
+					self::FONT_FILE , $code )
+				or die('Error in imagettftext function');
 
 
 		/* output image to browser */
