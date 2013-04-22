@@ -3,7 +3,7 @@ Contributors: richard_inmote, ha_ulrich
 Tags: mail,send,download,brochure,flyer,customer,pdf,prospect,later,QR
 Requires at least: 3.2
 Tested up to: 3.5
-Stable tag: 1.0.1
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,6 +33,9 @@ The plugin can be placed on pages or as a sidebar widget. It will send the page 
 3. Upper part of the plugin back-end. The generated e-mail message can also be customized. All displayed text can be translated here.
 
 == Changelog ==
+
+= 1.0.1 =
+* Place CAPTCHA text in front of noise
 
 = 1.0 =
 * First release
